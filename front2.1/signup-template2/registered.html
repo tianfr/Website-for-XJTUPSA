@@ -1,0 +1,364 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" type="image/icon" href="../homepage/assets/logo/favicon.png"/>
+<link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
+<link href="css/font-awesome.min.css" type="text/javascript" rel="stylesheet">
+<link href="css/bootsnav.css" type="text/css" rel="stylesheet">
+<link href="css/normalize.css" type="text/css" rel="stylesheet">
+<link href="css/css.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="css/register.css">
+<script src="js/jquery-1.11.0.min.js" type="text/javascript"></script>
+<script src="js/jquery.step.js"></script>
+<script src="js/bootstrap.min.js" type="text/javascript"></script>
+<script src="js/bootsnav.js" type="text/javascript"></script>
+
+
+<script src="js/jquery.js" type="text/javascript"></script>
+<!--[if IE]><script src="js/html5.js"></script><![endif]-->
+<title>XJTUMUN2020·志愿者报名注册</title>
+</head>
+
+<body class="logobg_style">
+  <div id="large-header" class="large-header login-page" style="height: 2000px!important;">
+  	<canvas id="demo-canvas" width="1590" height="2000"></canvas>
+  	<div class="Retrieve_style">
+  	  <div class="Retrieve-content step-body " id="myStep">
+  		<h1 class="title_name">代表报名注册</h1>
+  		<div class="step-header"> <ul><li><p>基本信息</p></li><li><p>联系方式及证件信息</p></li><li><p>信息确认</p></li></ul></div>
+ 		  <div class="step-content">
+  			<div class="step-list login_padding">
+  				<form  role="form" id="form_login" class="">
+
+					<div class="form-group clearfix">
+						<div class="input-group">
+							<div class="input-group-addon"><i class="icon_yanzhen"></i></div>
+							<input type="text"  class="form-control"  name="Verification" id="name"   placeholder="请输入你的姓名" autocomplete="off">
+						</div>
+					</div>
+
+					<div class="form-group clearfix">
+						<div class="input-group">
+							<div class="input-group-addon"><i class="icon_yanzhen"></i></div>
+							<select class="form-control" id="sex" name="duration1">
+
+							<option value="">请输入你的性别</option><!-- /.option-->
+
+							<option value=男>男</option><!-- /.option-->
+							<option value=女>女</option><!-- /.option-->
+
+
+							</select><!-- /.select-->
+						</div>
+					</div>
+
+					<div class="form-group clearfix">
+						<div class="input-group">
+							<div class="input-group-addon"><i class="icon_yanzhen"></i></div>
+							<input type="text"  class="form-control"  name="Verification" id="age"   placeholder="请输入你的年龄" autocomplete="off">
+						</div>
+					</div>
+
+					<div class="form-group clearfix">
+						<div class="input-group">
+							<div class="input-group-addon"><i class="icon_yanzhen"></i></div>
+							<input type="text"  class="form-control"  name="Verification" id="classnum"   placeholder="请输入你的班级" autocomplete="off">
+						</div>
+					</div>
+
+					<div class="form-group clearfix">
+						<div class="input-group">
+							<div class="input-group-addon"><i class="icon_yanzhen"></i></div>
+							<input type="text"  class="form-control"  name="Verification" id="college"   placeholder="请输入你的学院" autocomplete="off">
+						</div>
+					</div>
+					<div class="form-group clearfix">
+						<div class="input-group">
+							<div class="input-group-addon"><i class="icon_yanzhen"></i></div>
+							<input type="text"  class="form-control"  name="Verification" id="studentID"   placeholder="请输入学号" autocomplete="off">
+						</div>
+					</div>
+
+
+
+             <div class="tishi"></div>
+             </form> 
+            <div class="form-group">
+					<button  class="btn btn-danger btn-block btn-login" id="applyBtn" >下一步</button>
+				</div>	
+			
+			</div>
+			<div class="step-list">
+				<form method="post" role="form" id="" class="login_padding">
+
+					<div class="form-group clearfix">
+						<div class="input-group col-lg-8 col-md-8 col-xs-8">
+							<div class="input-group-addon"><i class="icon_phone"></i></div>
+							<input type="text" class="form-control text_phone" name="phone" id="phone" placeholder="你的手机号" autocomplete="off">
+						</div>
+					</div>
+
+
+
+
+					<div class="form-group clearfix">
+						<div class="input-group">
+							<div class="input-group-addon"><i class="icon_yanzhen"></i></div>
+							<input type="text"  class="form-control"  name="qq" id="qq"   placeholder="请输入你的QQ号" autocomplete="off">
+						</div>
+					</div>
+
+					<div class="form-group clearfix">
+						<div class="input-group">
+							<div class="input-group-addon"><i class="icon_yanzhen"></i></div>
+							<input type="text"  class="form-control"  name="wechat" id="wechat"   placeholder="请输入你的微信号" autocomplete="off">
+						</div>
+					</div>
+
+					<div class="form-group clearfix">
+						<div class="input-group">
+							<div class="input-group-addon"><i class="icon_yanzhen"></i></div>
+							<select class="form-control" id="suit" name="duration1">
+								<option  value="">请选择是否有正装</option><!-- /.option-->
+								<option value=yes>是</option><!-- /.option-->
+								<option value=no>否</option><!-- /.option-->
+							</select><!-- /.select-->
+						</div>
+					</div>
+
+
+
+					<div class="zzsc">
+						志愿时间选择（可多选）：
+						<div class="js-demo-1" id="volunteerchoice">
+							<label><input type="checkbox" name="volunteer" value="0" checked />3/10 18：00~21：00</label>
+							<label><input type="checkbox" name="volunteer" value="1" />3/11 18：00~21：00</label>
+							<label><input type="checkbox" name="volunteer" value="2" />3/12 18：00~21：00</label>
+							<label><input type="checkbox" name="volunteer" value="3" />3/13 18：00~21：00</label>
+						</div>
+
+						<script language="javascript">
+							$(".js-demo-1").find("input").ionCheckRadio();
+						</script>
+
+					</div>
+					<div class="zzsc">
+						培训时间选择（可多选）：
+						<div class="js-demo-2" id="trainingchoice">
+							<label><input  type="checkbox" name="training" value="3/10 18：00~21：00" checked />3/10 18：00~21：00</label>
+							<label><input type="checkbox" name="training" value="3/11 18：00~21：00" />3/11 18：00~21：00</label>
+							<label><input type="checkbox" name="training" value="3/12 18：00~21：00" />3/12 18：00~21：00</label>
+							<label><input type="checkbox" name="training" value="3/13 18：00~21：00" />3/13 18：00~21：00</label>
+						</div>
+
+						<script language="javascript">
+							$(".js-demo-2").find("input").ionCheckRadio();
+						</script>
+
+					</div>
+					<div class="tishis"></div>
+
+				<div class="form-group">
+					<a href="javascript:void(0);" type="submit" class="btn btn-danger btn-block btn-login" id="submitBtn">下一步</a>
+				</div>
+				</form>
+			  </div>
+
+			  <div class="step-list">
+
+					<div class="ok_style center">
+							<div>
+								<label for="">请确认你的信息：</label>
+								<div class="confirm-info" style="margin: 10px 40px;">
+									<label class="sr-only help-info" for="inputHelpBlock">中文姓名</label>
+									<input class="form-control" id="name-verify" type="text" value="" placeholder="请输入内容" readonly>
+								</div>
+								
+								<div class="confirm-info" style="margin: 10px 40px;">
+									<label class="sr-only help-info" for="inputHelpBlock">性别</label>
+									<input class="form-control" id="sex-verify" type="text" value="" placeholder="请输入内容" readonly>
+								</div>
+								<div class="confirm-info" style="margin: 10px 40px;">
+									<label class="sr-only help-info" for="inputHelpBlock">年龄</label>
+									<input class="form-control" id="age-verify" type="text" value="" placeholder="请输入内容" readonly>
+								</div>
+								<div class="confirm-info" style="margin: 10px 40px;">
+									<label class="sr-only help-info" for="inputHelpBlock">班级</label>
+									<input class="form-control" id="classnum-verify" type="text" value="" placeholder="请输入内容" readonly>
+								</div>
+								<div class="confirm-info" style="margin: 10px 40px;">
+									<label class="sr-only help-info" for="inputHelpBlock">学院</label>
+									<input class="form-control" id="college-verify" type="text" value="" placeholder="请输入内容" readonly>
+								</div>
+								<div class="confirm-info" style="margin: 10px 40px;">
+									<label class="sr-only help-info" for="inputHelpBlock">学号</label>
+									<input class="form-control" id="studentID-verify" type="text" value="" placeholder="请输入内容" readonly>
+								</div>
+
+								<div class="confirm-info" style="margin: 10px 40px;">
+									<label class="sr-only help-info" for="inputHelpBlock">联系电话</label>
+									<input class="form-control" id="phone-verify" type="text" value="" placeholder="请输入内容" readonly>
+								</div>
+
+
+								<div class="confirm-info" style="margin: 10px 40px;">
+									<label class="sr-only help-info" for="inputHelpBlock">QQ</label>
+									<input class="form-control" id="qq-verify" type="text" value="" placeholder="请输入内容" readonly>
+								</div>
+								<div class="confirm-info" style="margin: 10px 40px;">
+									<label class="sr-only help-info" for="inputHelpBlock">微信</label>
+									<input class="form-control" id="wechat-verify" type="text" value="" placeholder="请输入内容" readonly>
+								</div>
+								<div class="confirm-info" style="margin: 10px 40px;">
+									<label class="sr-only help-info" for="inputHelpBlock">是否有正装</label>
+									<input class="form-control" id="suit-verify" type="text" value="" placeholder="请输入内容" readonly>
+								</div>
+
+							</div>
+	                        <button id="gobackFirst" class="btn btn-danger">返回修改</button>
+
+	                        <button id="btnConnect1" onclick="sign_in()" class="btn btn-primary">确认提交</button>
+
+
+					</div>
+			  </div>
+			</div>
+  		</div> 			
+  </div>
+ </div>
+  <script src="js/TweenLite/TweenLite.min.js"></script>
+<script src="js/TweenLite/EasePack.min.js"></script>
+<script src="js/TweenLite/rAF.js"></script>
+<script src="js/TweenLite/demo-1.js"></script>
+</body>
+</html>
+<script type="text/javascript">
+
+	let name = $.trim($("#name").val());
+	let sex = $.trim($("#sex").val());
+	let age = $.trim($("#age").val());
+	let classnum = $.trim($("#classnum").val());
+	let college = $.trim($("#college").val());
+	let studentID = $.trim($("#studentID").val());
+	let phone = $.trim($("#phone").val());
+	let qq = $.trim($("#qq").val());
+	let wechat = $.trim($("#wechat").val());
+	let suit = $.trim($("#suit").val());
+
+	var obj1 = document.volunteerchoice.volunteer;
+	var volunteer = [];
+	for (i = 0; i < obj1.length; i++) {
+		if (obj1[i].checked) {
+			volunteer.push(obj1[i].value)
+			//$("body").append("<p>" + obj1[i].value + "</p>")
+		}
+	}
+
+	var obj2 = document.trainingchoice.training;
+	var training = [];
+	for (i = 0; i < obj2.length; i++) {
+		if (obj2[i].checked) {
+			training.push(obj2[i].value)
+			//$("body").append("<p>" + obj1[i].value + "</p>")
+		}
+	}
+
+	function sign_in() {
+		alert("已点击按钮");
+
+
+		$.ajax({
+			type:"POST", // 使用post方式
+
+			// 志愿者报名
+			url:"http://127.0.0.1:8888/volunteer",
+			contentType:"application/json",
+
+
+			data: JSON.stringify({
+				"status": "0",
+				"message": "volunteerSend",
+				"data": {
+					"title": {
+						"id": "002",
+						"name" : "volunteerSend"
+					},
+					"content": [
+						{
+							"id": "Name",
+							"value":name
+						},
+						{
+							"id": "Gender",
+							"value":sex
+						},
+						{
+							"id": "Age",
+							"value":age
+						},
+						{
+							"id": "Class",
+							"value":classnum
+						},
+						{
+							"id": "College",
+							"value":college
+						},
+						{
+							"id": "StudentID",
+							"value":studentID
+						},
+						{
+							"id": "Phone",
+							"value":phone
+						},
+						{
+							"id": "QQ",
+							"value":qq
+						},
+						{
+							"id": "Wechat",
+							"value":wechat
+						},
+						{
+							"id": "Suit",
+							"value":suit
+						},
+						{
+							"id": "VolunteeringTime",
+							"value":volunteer
+						},
+						{
+							"id": "TrainingTime",
+							"value":training
+						}
+					]
+				}
+			})
+
+
+			dataType:"json",
+
+			success: function(result){
+				// 请求成功后的操作
+				if (result.successValue == "1"){
+					alert("插入数据成功");
+					location.href = "http://xjtumun2020.xjtupsa.com/homepage/index.html"
+				}
+				else{
+					alert("插入数据失败");
+				}
+			},
+
+			error: function(XMLHttpRequest, textStatus, errorThrown) {
+				alert("插入数据失败");
+				alert(textStatus);
+			}
+		});
+	}
+</script>
+
+
