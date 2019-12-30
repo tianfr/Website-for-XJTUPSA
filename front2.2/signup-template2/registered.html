@@ -252,7 +252,7 @@
 	var volunteer = [];
 	for (i = 0; i < obj1.length; i++) {
 		if (obj1[i].checked) {
-			volunteer.push(obj1[i].value)
+			volunteer.push(obj1[i].value);
 			//$("body").append("<p>" + obj1[i].value + "</p>")
 		}
 	}
@@ -261,7 +261,7 @@
 	var training = [];
 	for (i = 0; i < obj2.length; i++) {
 		if (obj2[i].checked) {
-			training.push(obj2[i].value)
+			training.push(obj2[i].value);
 			//$("body").append("<p>" + obj1[i].value + "</p>")
 		}
 	}
@@ -272,9 +272,11 @@
 
 		$.ajax({
 			type:"POST", // 使用post方式
-
+			headers:{'Content-Type':'application/json;charset=utf8'},
+			  // 如果是志愿者报名，url改写为：
+			  // url:"http://127.0.0.1:8888/volunteer"
 			// 志愿者报名
-			url:"http://127.0.0.1:8888/volunteer",
+			url:"http://47.94.249.153:8888/volunteer",
 			contentType:"application/json",
 
 
@@ -337,7 +339,7 @@
 						}
 					]
 				}
-			})
+			}),
 
 
 			dataType:"json",
@@ -346,7 +348,7 @@
 				// 请求成功后的操作
 				if (result.successValue == "1"){
 					alert("插入数据成功");
-					location.href = "http://xjtumun2020.xjtupsa.com/homepage/index.html"
+					location.href = "http://xjtumun2020.xjtupsa.com/homepage/index.html";
 				}
 				else{
 					alert("插入数据失败");
