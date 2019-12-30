@@ -16,6 +16,7 @@
 
 <u>***Jin Xin,***</u> 2017, Xi'an Jiaotong University
 
-<u>***Deng Xinyi,***</u> 2017, Xi'an Jiaotong University
+[<u>***Deng Xinyi,***</u>](https://github.com/dxy1999823) 2017, Xi'an Jiaotong University
 
 <u>***Li Zhaolong,***</u> 2017, Xi'an Jiaotong University
+
