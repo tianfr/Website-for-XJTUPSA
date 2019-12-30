@@ -1,6 +1,6 @@
 # Website-for-XJTUPSA
 
-**Our project website:**  <u>[xjtumun2020.xjtupsa.com](xjtumun2020.xjtupsa.com)</u>
+**Our project website:**  [<u>xjtumun2020.xjtupsa.com</u>](xjtumun2020.xjtupsa.com)
 
 ### Authors: 
 
