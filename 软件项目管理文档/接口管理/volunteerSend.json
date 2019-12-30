@@ -1,0 +1,61 @@
+
+{
+    "status": "0",
+    "message": "volunteerSend",
+    "data": {
+        "title": {
+            "id": "002",
+            "name" : "volunteerSend"
+        },
+        "content": [
+            {
+                "id": "Name",
+                "value":"INPUT"
+            },
+            {
+                "id": "Gender",
+                "value":"male OR female"
+            },
+            {
+                "id": "Age",
+                "value":"INPUT"
+            },
+            {
+                "id": "Class",
+                "value":"INPUT"
+            },
+            {
+                "id": "College",
+                "value":"INPUT"
+            },
+            {
+                "id": "StudentID",
+                "value":"INPUT"
+            },
+            {
+                "id": "Phone",
+                "value":"INPUT"
+            },
+            {
+                "id": "QQ",
+                "value":"INPUT"
+            },
+            {
+                "id": "Wechat",
+                "value":"INPUT"
+            },
+            {
+                "id": "Suit",
+                "value":"yes OR no"
+            },
+            {
+                "id": "VolunteeringTime",
+                "value":"Multiple Choices"
+            },
+            {
+                "id": "TrainingTime",
+                "value":"Multiple Choice"
+            }
+        ]
+    }
+}

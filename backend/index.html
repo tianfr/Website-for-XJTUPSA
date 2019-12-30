@@ -1,0 +1,162 @@
+    <!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <meta charset="utf-8" /> 
+</head>
+<body>
+    <input type="button" value="代表报名" onclick="sign_in()"/>
+    <button onclick="sign_in()">志愿者报名</button>
+    <button onclick="sign_in1()">志愿者时间查询</button>
+</body>
+</html>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script type="text/javascript">
+    function sign_in() { 
+        alert("已点击按钮"); 
+        var value1 = "333";
+        var value2 = "e4ee";
+
+        $.ajax({ 
+            type:"POST", // 使用post方式 
+
+            // 如果是志愿者报名，url改写为：
+            // url:"http://127.0.0.1:8888/volunteer"
+            url:"http://127.0.0.1:8888/delegate", //端口号要与后端统一
+            
+            contentType:"application/json", 
+            
+            //前端在这里写参数列表
+            data: JSON.stringify({
+    "status": "0",
+    "message": "delegate",
+    "data": {
+        "title": {
+            "id": "001",
+            "name" : "delegate"
+        },
+        "content": [
+            {
+                "id": "ChineseName",
+                "value":"INPUT"
+            },
+            {
+                "id": "EnglishName",
+                 "value":"INPUT"
+            },
+            {
+                "id": "Gender",
+                "value":"male OR female"
+            },
+            {
+                "id": "School",
+                "value":"INPUT"
+            },
+            {
+                "id": "Grade",
+                "value":"INPUT"
+            },
+            {
+                "id": "Delegation",
+                "value":"INPUT"
+            },
+            {
+                "id": "Phone",
+                "value":"INPUT"
+            },
+            {
+                "id": "ValidID",
+                "value":"a b c d e OR f"
+            },
+            {
+                "id": "IDNumber",
+                "value":"INPUT"
+            },
+            {
+                "id": "QQ",
+                "value":"INPUT"
+            },
+            {
+                "id": "Wechat",
+                "value":"INPUT"
+            },
+            {
+                "id": "Email",
+                "value":"INPUT"
+            },
+            {
+                "id": "Identity",
+                "value":"a OR b OR c"
+            },
+            {
+                "id": "Teamleader",
+                "value":"yes OR no"
+            },
+            {
+                "id": "Notes",
+                "value":"INPUT"
+            }
+        ]
+    }
+}), // 参数列表，stringify()方法用于将JS对象序列化为json字符串 
+        
+            dataType:"json", 
+
+            success: function(result){ 
+                // alert(result.responseText);
+                // 请求成功后的操作 
+                if (result.successValue == "1"){
+                    alert("插入数据成功");
+                    
+                }
+                else{
+                    alert("插入数据失败");
+                } 
+            },
+
+            error: function(XMLHttpRequest, textStatus, errorThrown) {
+                // alert(XMLHttpRequest.status);
+                // alert(XMLHttpRequest.readyState);
+                alert("插入数据失败");
+                alert(textStatus);
+                }
+        }); 
+    }
+    function sign_in1() { 
+        alert("已点击按钮");
+        $.ajax({ 
+                type:"GET", // 使用post方式 
+
+            // 如果是志愿者报名，url改写为：
+            // url:"http://127.0.0.1:8888/volunteer"
+                url:"http://127.0.0.1:8888/volunteerSend", //端口号要与后端统一
+            
+                contentType:"application/json", 
+            
+        
+                dataType:"json", 
+
+                success: function(result){ 
+                // alert(result.responseText);
+                // 请求成功后的操作 
+                alert(result.message)
+                    if (result.message == "volunteerGet"){
+                        alert(result.data.content.time1);
+                    
+                    }
+                    else{
+                        alert("插入数据失败");
+                    } 
+                },
+
+                error: function(XMLHttpRequest, textStatus, errorThrown) {
+                // alert(XMLHttpRequest.status);
+                // alert(XMLHttpRequest.readyState);
+                    alert("插入数据失败");
+                    alert(textStatus);
+                }
+            }); 
+    }
+</script>   
+

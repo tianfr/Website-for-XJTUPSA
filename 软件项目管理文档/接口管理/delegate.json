@@ -1,0 +1,77 @@
+
+{
+    "status": "0",
+    "message": "delegate",
+    "data": {
+        "title": {
+            "id": "001",
+            "name" : "delegate"
+        },
+        "content": [
+            {
+                "id": "ChineseName",
+                "value":"INPUT"
+            },
+            {
+                "id": "EnglishName",
+                 "value":"INPUT"
+            },
+            {
+                "id": "Gender",
+                "value":"male OR female"
+            },
+            {
+                "id": "Age",
+                "value":"INPUT"
+            },
+            {
+                "id": "School",
+                "value":"INPUT"
+            },
+            {
+                "id": "Grade",
+                "value":"INPUT"
+            },
+            {
+                "id": "Delegation",
+                "value":"INPUT"
+            },
+            {
+                "id": "Phone",
+                "value":"INPUT"
+            },
+            {
+                "id": "ValidID",
+                "value":"a b c d e OR f"
+            },
+            {
+                "id": "IDNumber",
+                "value":"INPUT"
+            },
+            {
+                "id": "QQ",
+                "value":"INPUT"
+            },
+            {
+                "id": "Wechat",
+                "value":"INPUT"
+            },
+            {
+                "id": "Email",
+                "value":"INPUT"
+            },
+            {
+                "id": "Identity",
+                "value":"a OR b OR c"
+            },
+            {
+                "id": "Teamleader",
+                "value":"yes OR no"
+            },
+            {
+                "id": "Notes",
+                "value":"INPUT"
+            }
+        ]
+    }
+}

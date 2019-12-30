@@ -1,0 +1,29 @@
+
+{
+    "status": "0",
+    "message": "volunteerGet",
+    "data": {
+        "title": {
+            "id": "003",
+            "name" : "volunteerGet"
+        },
+        "content": [
+            {
+                "id": "Time1",
+                "value":"REST PLACES FROM XLSX"
+            },
+            {
+                "id": "Time2",
+                "value":"REST PLACES FROM XLSX"
+            },
+            {
+                "id": "Time3",
+                "value":"REST PLACES FROM XLSX"
+            },
+            {
+                "id": "Time4",
+                "value":"REST PLACES FROM XLSX"
+            }
+        ]
+    }
+}
